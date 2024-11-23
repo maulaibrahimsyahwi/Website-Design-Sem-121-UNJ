@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<style>
+    #deskripsi{
+        overflow-y: scroll;
+        height: 10rem;
+    }
+</style>
+<body>
+    <table border="3" style="width: 30rem;">
+        <tr> 
+            <td>
+            <label for="username">User Name</label>
+            </td>
+            <td>
+            <input type="text" id="username" name="username">
+            </td>  
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password">
+            </td>
+        </tr> 
+        <tr>
+            <td>  
+                <label for="repassword">Re-type Password</label>
+            </td>
+            <td>
+                <input type="password" id="repassword" name="repassword">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">E-mail</label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="nama">Nama</label>
+            </td>
+            <td>
+            <input type="text" id="nama" name="nama">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nim">NIM</label>
+            </td>
+            <td>
+                <input type="text" id="nim" name="nim">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="alamat">Alamat</label>
+            </td>
+            <td><input type="text" name="alamat" id="alamat"></td>
+        </tr>
+        <tr>            
+            <td><label for="kotaasal">Kota Asal</label>
+            
+        </td>
+        <td>
+            <select id="kotaasal" name="kotaasal">
+                <option>DKI Jakarta</option>
+                <option>Bandung</option>
+                <option>Semarang</option>
+        </td>      
+        </tr>
+        <tr>
+            <td>        
+            <label>Jenis Kelamin</label>
+            </td>
+            <td>
+                <input type="radio" name="jeniskelamin" value="pria"> Pria
+                <input type="radio" name="jeniskelamin" value="wanita"> Wanita
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">HOBI</td>
+            <td>
+            <input type="checkbox" value="coding"> Coding</td>
+        </tr>
+          <tr>
+            <td><input type="checkbox" value="PSan"> PS</td>
+          </tr>
+          
+          <tr>
+            <td><input type="checkbox" value="bilyard"> Bilyard</td>
+          </tr>
+        <tr>
+            <td>
+                <label for="deskripsi">Deskripsi Pribadi</label>
+            </td>
+            <td>
+                <textarea id="deskripsi" name="deskripsi" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Kirim</button>
+                <button type="reset">Hapus</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

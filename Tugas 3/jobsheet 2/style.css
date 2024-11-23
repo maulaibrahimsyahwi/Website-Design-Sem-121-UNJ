@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.container {
+    max-width: 1000px;
+    width: 90%;
+    background: #ffffff; 
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #71b7e6;
+}
+.container form .personal-data, .container form .college-biodata{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .personal-data .input-box, form .college-biodata .input-box {
+    margin: 20px 0 2px 0; 
+    width: calc(100% / 2 - 20px);
+}
+.personal-data .input-box input, .college-biodata .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+} 
+.personal-data .input-box input, .college-biodata .input-box input:focus, 
+.personal-data .input-box input:valid, .college-biodata .input-box input:valid {
+border-color: #9b59b6;
+}
+.personal-data .input-box label, .college-biodata .input-box label {
+    font-weight: 500;
+    margin-bottom: 2px;
+    display: block;
+}
+
+/* RESPONSIVE MEDIA */
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .personal-data .input-box, form .college-biodata .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .personal-data, .container form .college-biodata {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
