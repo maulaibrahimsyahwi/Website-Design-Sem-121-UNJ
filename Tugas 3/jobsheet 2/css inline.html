@@ -5,20 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Inline</title>
 </head>
-<body style="border: 3px solid black">
-    <h1 style="color: salmon; font-style:oblique; font-size: 2rem; background-color: lightskyblue; text-align: center; font-weight: bold;">BIODATA DIRI</h1>
-    <p>Nama : Maula Ibrahim Syahwi</p>
-    <p>Nama Panggilan : Maul</p>
-    <p>Tempat Tanggal Lahir : DKI Jakarta, 15 Agustus 2004</p>
-    <p>Agama : Islam</p>
-    <p>Domisili : DKI Jakarta</p>
-    <p>Pekerjaan : Mahasiswa</p>
-    <h1 style="color: black; font-style: oblique ; font-size: 2rem; background-color: lightcoral; text-align: center; font-weight: bold;">BIODATA PERKULIAHAN</h1>
-    <p style="color:brown;">Nama Lengkap : Maula Ibrahim Syahwi</p>
-    <p style="color: darkgreen;">NIM : 1512623013</p>
-    <p style="color: red;">PRODI : Pendidikan Teknik Informatika dan Komputer</p>
-    <p style="color: blue;">Fakultas : Teknik</p>
-    <p>Universitas : Universitas Negeri Jakarta</p>
+<body style="height: 100vh; display: flex;justify-content: center;align-items: center;background-color: lightsalmon;">
+    <div class="container" style=" max-width: 1000px; width: 90%; background: #ffffff; padding: 25px 30px; border-radius: 5px; height: 70%;">
+        <div class="title" style=" font-size: 2rem; font-weight: bold;position: relative; text-align: center;color: #71b7e6;">BIODATA DIRI</div>
+        <form action="#">
+            <div class="personal-data" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="input-box">
+                    <label for="name" class="detail"> Nama </label>
+                    <input type="text" name="name" id="name" placeholder="Input Your Full Name">
+                </div>
+                <div class="input-box">
+                    <label for="nickname" class="detail">Nama Panggilan</label>
+                    <input type="text" name="nickname" id="nickname" placeholder="Input Your Nickname">
+                </div>
+                <div class="input-box">
+                    <label for="date" class="detail">Tempat Tanggal Lahir</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="input-box">
+                    <label for="agama" class="detail">Agama</label>
+                    <input type="text" name="agama" id="agama" placeholder="Input Your Religion">
+                </div>
+                <div class="input-box">
+                    <label for="domisili" class="detail">Domisili</label>
+                    <input type="text" name="domisili" id="domisili" placeholder="Input Your Domicile">
+                </div>
+                <div class="input-box">
+                    <label for="work" class="detail">Pekerjaan</label>
+                    <input type="text" name="work" id="work" placeholder="Input Your Work">
+                </div>
+            </div>
+        </form>
+        <div class="title" style=" font-size: 2rem; font-weight: bold;position: relative; text-align: center;color: #71b7e6;">BIODATA PERKULIAHAN</div>
+        <form action="#" >
+            <div class="college-biodata" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="input-box">
+                    <label for="namalengkap" class="detail">Nama Lengkap</label>
+                    <input type="text" name="namalengkap" id="namalengkap" placeholder="Input Your Full Name">
+                </div>
+                <div class="input-box">
+                    <label for="nim" class="detail">NIM</label>
+                    <input type="number" name="nim" id="nim" placeholder="Input Your NIM">
+                </div>
+                <div class="input-box">
+                    <label for="prodi" class="detail">PRODI</label>
+                    <input type="text" name="prodi" id="prodi" placeholder="Input Your Full Name Study Program">
+                </div>
+                <div class="input-box">
+                    <label for="fakultas" class="detail">Fakultas</label>
+                    <input type="text" name="fakultas" id="fakultas" placeholder="Input Your Full Name Faculty">
+                </div>
+                <div class="input-box">
+                    <label for="universitas" class="detail">Universitas</label>
+                    <input type="text" name="universitas" id="universitas" placeholder="Input Your Full Name University">
+                </div>
+            </div>
+        </form>
     <footer><code>&#169; Maula Ibrahim Syahwi 1512623013. All rights reserved, since 2024</code></footer>
+    </div>
 </body>
 </html>
